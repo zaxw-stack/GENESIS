@@ -1,0 +1,38 @@
+# Python/Django
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.sqlite3
+.db
+*.log
+*.pot
+*.py[cod]
+*.so
+*.swp
+*.egg-info/
+.eggs/
+*.pid
+*.coveragerc
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# Env
+.env
+.venv
+venv/
+ENV/
+env/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
