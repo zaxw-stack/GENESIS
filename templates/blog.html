@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Blog - Arsha Bootstrap Template</title>
+  <title>Blog - sik0 tech Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -18,17 +19,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- CSS -->
+<link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 
+<!-- Images -->
+<img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid animated" alt="">
   <!-- =======================================================
-  * Template Name: Arsha
+  * Template Name: sik0 tech
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
   * Updated: Feb 22 2025 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
@@ -44,7 +48,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Arsha</h1>
+        <h1 class="sitename">sik0 tech</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -114,28 +118,28 @@
                   <article>
 
                     <div class="post-img">
-                      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" alt="Salon client getting a fresh hairstyle" class="img-fluid">
+                      <img src="assets/img/blog/blog-post-1.webp" alt="" class="img-fluid">
                     </div>
 
                     <h2 class="title">
-                      <a href="blog-details.html?post=1">How to keep your hair and beard looking fresh between salon visits</a>
+                      <a href="blog-details.html">Building Scalable Web Applications with Modern Frameworks</a>
                     </h2>
 
                     <div class="meta-top">
                       <ul>
-                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html?post=1">Amina Wanjiku</a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html?post=1"><time datetime="2026-06-09">Jun 9, 2026</time></a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html?post=1">8 Comments</a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">Development Team</a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2024-06-09">Jun 9, 2024</time></a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">8 Comments</a></li>
                       </ul>
                     </div>
 
                     <div class="content">
                       <p>
-                        A few practical habits can keep your hair and beard looking sharp between salon visits, especially in Nairobi’s changing weather.
+                        Explore our comprehensive guide to building scalable applications using modern tech stacks. Learn best practices for performance optimization, security, and maintainability in production environments.
                       </p>
 
                       <div class="read-more">
-                        <a href="blog-details.html?post=1">Read More</a>
+                        <a href="blog-details.html">Read More</a>
                       </div>
                     </div>
 
@@ -147,60 +151,27 @@
                   <article>
 
                     <div class="post-img">
-                      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Barber styling a beard" class="img-fluid">
+                      <img src="assets/img/blog/blog-post-2.webp" alt="" class="img-fluid">
                     </div>
 
                     <h2 class="title">
-                      <a href="blog-details.html?post=2">How to keep your beard sharp, neat, and easy to style</a>
+                      <a href="blog-details.html">Cloud Architecture Best Practices for Enterprise Applications</a>
                     </h2>
 
                     <div class="meta-top">
                       <ul>
-                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html?post=2">Daniel Otieno</a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html?post=2"><time datetime="2026-05-17">May 17, 2026</time></a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html?post=2">6 Comments</a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> sik0 tech Team</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2024-06-08">Jun 8, 2024</time></a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">15 Comments</a></li>
                       </ul>
                     </div>
 
                     <div class="content">
                       <p>
-                        Discover simple upkeep tips for beard trimming, oiling, and daily grooming that keep your look sharp between visits.
+                        Discover how to architect cloud solutions that scale efficiently while maintaining security and cost-effectiveness. Learn about containerization, microservices, and infrastructure-as-code strategies.
                       </p>
                       <div class="read-more">
-                        <a href="blog-details.html?post=2">Read More</a>
-                      </div>
-                    </div>
-
-                  </article>
-
-                </div><!-- End post list item -->
-
-                <div class="col-lg-6">
-
-                  <article>
-
-                    <div class="post-img">
-                      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Haircare products arranged for styling" class="img-fluid">
-                    </div>
-
-                    <h2 class="title">
-                      <a href="blog-details.html?post=3">Best hair products for everyday shine and healthy growth</a>
-                    </h2>
-
-                    <div class="meta-top">
-                      <ul>
-                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html?post=3">Grace Nduta</a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html?post=3"><time datetime="2026-06-02">Jun 2, 2026</time></a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html?post=3">10 Comments</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="content">
-                      <p>
-                        Our stylists share which creams, oils, and shampoos work best for Nairobi humidity and daily styling needs.
-                      </p>
-                      <div class="read-more">
-                        <a href="blog-details.html?post=3">Read More</a>
+                        <a href="blog-details.html">Read More</a>
                       </div>
                     </div>
 
@@ -213,27 +184,60 @@
                   <article>
 
                     <div class="post-img">
-                      <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=80" alt="Natural hair styling session" class="img-fluid">
+                      <img src="assets/img/blog/blog-post-3.webp" alt="" class="img-fluid">
                     </div>
 
                     <h2 class="title">
-                      <a href="blog-details.html?post=4">Protective styling tips for natural hair that still look polished</a>
+                      <a href="blog-details.html">Mobile App Development Trends in 2024</a>
                     </h2>
 
                     <div class="meta-top">
                       <ul>
-                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html?post=4">Njeri M.</a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html?post=4"><time datetime="2026-04-21">Apr 21, 2026</time></a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html?post=4">7 Comments</a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> sik0 tech Team</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2024-06-07">Jun 7, 2024</time></a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">10 Comments</a></li>
                       </ul>
                     </div>
 
                     <div class="content">
                       <p>
-                        From protective styles to moisture care, these practical routines help natural hair stay healthy, defined, and ready for every day.
+                        Stay ahead of the curve with insights into the latest mobile development trends. From cross-platform frameworks to AI integration, learn what's shaping the future of mobile applications.
                       </p>
                       <div class="read-more">
-                        <a href="blog-details.html?post=4">Read More</a>
+                        <a href="blog-details.html">Read More</a>
+                      </div>
+                    </div>
+
+                  </article>
+
+                </div><!-- End post list item -->
+
+                <div class="col-lg-6">
+
+                  <article>
+
+                    <div class="post-img">
+                      <img src="assets/img/blog/blog-post-4.webp" alt="" class="img-fluid">
+                    </div>
+
+                    <h2 class="title">
+                      <a href="blog-details.html">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.</a>
+                    </h2>
+
+                    <div class="meta-top">
+                      <ul>
+                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> sik0 tech Team</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2024-06-09">Jun 9, 2024</time></a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">12 Comments</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="content">
+                      <p>
+                        Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
+                        Quia sed sunt. Ea asperiores expedita <br></p>
+                      <div class="read-more">
+                        <a href="blog-details.html">Read More</a>
                       </div>
                     </div>
 
@@ -292,40 +296,40 @@
               <div class="post-item">
                 <img src="assets/img/blog/blog-post-square-1.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html?post=1">How to keep your hair and beard looking fresh between salon visits</a></h4>
-                  <time datetime="2026-06-09">Jun 9, 2026</time>
+                  <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <img src="assets/img/blog/blog-post-square-2.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html?post=2">How to keep your beard sharp, neat, and easy to style</a></h4>
-                  <time datetime="2026-05-17">May 17, 2026</time>
+                  <h4><a href="blog-details.html">Quidem autem et impedit</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <img src="assets/img/blog/blog-post-square-3.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html?post=3">Best hair products for everyday shine and healthy growth</a></h4>
-                  <time datetime="2026-06-02">Jun 2, 2026</time>
+                  <h4><a href="blog-details.html">DevOps Best Practices for CI/CD Pipelines</a></h4>
+                  <time datetime="2024-06-05">Jun 5, 2024</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <img src="assets/img/blog/blog-post-square-4.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html?post=4">Protective styling tips for natural hair that still look polished</a></h4>
-                  <time datetime="2026-04-21">Apr 21, 2026</time>
+                  <h4><a href="blog-details.html">Database Design and Optimization Strategies</a></h4>
+                  <time datetime="2024-06-04">Jun 4, 2024</time>
                 </div>
               </div><!-- End recent post item-->
 
               <div class="post-item">
                 <img src="assets/img/blog/blog-post-square-5.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html?post=1">How to keep your cut fresh between visits</a></h4>
-                  <time datetime="2026-06-09">Jun 9, 2026</time>
+                  <h4><a href="blog-details.html">Security Vulnerabilities and Prevention Methods</a></h4>
+                  <time datetime="2024-06-03">Jun 3, 2024</time>
                 </div>
               </div><!-- End recent post item-->
 
@@ -398,7 +402,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Arsha</span>
+            <span class="sitename">sik0 tech</span>
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
@@ -430,7 +434,7 @@
 
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <p>Follow sik0 tech for the latest in tech innovation, development insights, and industry best practices.</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -443,7 +447,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Arsha</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">sik0 tech</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -462,18 +466,18 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="{% static 'assets/js/main.js' %}"></script>
 </body>
 
 </html>

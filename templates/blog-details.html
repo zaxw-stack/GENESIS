@@ -1,35 +1,37 @@
+
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Haircare Tips & Barber Styling | Milele Salon</title>
-  <meta name="description" content="Read helpful haircare and barber styling tips from Milele Salon in Nairobi.">
-  <meta name="keywords" content="salon blog, barbershop tips, Nairobi haircare, beard styling">
+  <title>Blog Details - sik0 tech Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,7００;０,８００;０,９００;１,１００;１,２００;１,３００;１,４００;１,５００;１,６００;１,７００;１,８００;１,９００&family=Jost:ital,wght@₀,₁₀₀;₀,₂₀₀;₀,₃₀₀;₀,₄₀₀;₀,₅₀₀;₀,₆₀₀;₀,₇₀₀;₀,₈₀₀;₀,₉₀₀;₁,₁₀₀;₁,₂₀₀;₁,₃₀₀;₁,₄₀₀;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  >
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+ <!-- CSS -->
+<link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
+<!-- Images -->
+<img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid animated" alt="">
   <!-- =======================================================
-  * Template Name: Milele Salon
-  * Template URL: https://example.com/milele-salon
+  * Template Name: sik0 tech
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
   * Updated: Feb 22 2025 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
@@ -44,7 +46,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Milele Salon</h1>
+        <h1 class="sitename">sik0 tech</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -56,21 +58,20 @@
           <li><a href="#team">Team</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li><a href="#services">Web Development</a></li>
+              <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
+                  <li><a href="#services">Mobile Apps</a></li>
+                  <li><a href="#services">Cloud Solutions</a></li>
+                  <li><a href="#services">Technical Consulting</a></li>
+                  <li><a href="#services">DevOps Services</a></li>
+                  <li><a href="#services">Performance Optimization</a></li>
                 </ul>
               </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#portfolio">View Portfolio</a></li>
+              <li><a href="#pricing">Pricing Plans</a></li>
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
@@ -78,7 +79,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#contact">Book Now</a>
+      <a class="btn-getstarted" href="#about">Get Started</a>
 
     </div>
   </header>
@@ -91,10 +92,10 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Blog</li>
+            <li class="current">Blog Details</li>
           </ol>
         </nav>
-        <h1>Haircare & Barber Insights</h1>
+        <h1>Blog Details</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -110,113 +111,113 @@
               <article class="article">
 
                 <div class="hero-img" data-aos="zoom-in">
-                  <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" alt="Barber shaping a beard" class="img-fluid" loading="lazy">
+                  <img src="assets/img/blog/blog-post-3.webp" alt="Featured blog image" class="img-fluid" loading="lazy">
                   <div class="meta-overlay">
                     <div class="meta-categories">
-                      <a href="#" class="category">Haircare & Barbering</a>
+                      <a href="#" class="category">Web Development</a>
                       <span class="divider">•</span>
-                      <span class="reading-time"><i class="bi bi-clock"></i> 5 min read</span>
+                      <span class="reading-time"><i class="bi bi-clock"></i> 6 min read</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="article-content" data-aos="fade-up" data-aos-delay="100">
                   <div class="content-header">
-                    <h1 class="title">How to keep your hair and beard looking fresh between salon visits</h1>
+                    <h1 class="title">Modern Web Development: Best Practices and Future Trends for 2025</h1>
 
                     <div class="author-info">
                       <div class="author-details">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Author" class="author-img">
+                        <img src="assets/img/person/person-f-8.webp" alt="Author" class="author-img">
                         <div class="info">
-                          <h4>Amina Wanjiku</h4>
-                          <span class="role">Lead Stylist</span>
+                          <h4>Michael Chen</h4>
+                          <span class="role">Senior Web Developer</span>
                         </div>
                       </div>
                       <div class="post-meta">
-                        <span class="date"><i class="bi bi-calendar3"></i> Jun 09, 2026</span>
+                        <span class="date"><i class="bi bi-calendar3"></i> Mar 15, 2025</span>
                         <span class="divider">•</span>
-                        <span class="comments"><i class="bi bi-chat-text"></i> 8 Comments</span>
+                        <span class="comments"><i class="bi bi-chat-text"></i> 18 Comments</span>
                       </div>
                     </div>
                   </div>
 
                   <div class="content">
                     <p class="lead">
-                      At Milele Salon, we know that great style does not stop when you leave the chair. A few simple habits can help you keep your hair and beard looking sharp between visits.
+                      The landscape of web development continues to evolve at an unprecedented pace, bringing new technologies, frameworks, and methodologies that reshape how we build modern web applications.
                     </p>
 
                     <p>
-                      Nairobi weather can be tough on hair, especially when the air is dry or humid. That is why we recommend a routine that keeps your hair soft, clean, and easy to manage. A good wash, a light leave-in conditioner, and a small amount of styling cream can make a big difference.
+                      As we delve into 2025, the web development ecosystem has transformed dramatically, introducing innovative approaches to building faster, more secure, and highly engaging web experiences. This comprehensive guide explores the latest trends and best practices that are defining the future of web development.
                     </p>
 
                     <div class="content-image right-aligned">
-                      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" class="img-fluid" alt="Salon client styling her hair" loading="lazy">
-                      <figcaption>Simple home care keeps your style looking fresh and polished</figcaption>
+                      <img src="assets/img/blog/blog-hero-2.webp" class="img-fluid" alt="Modern web development tools" loading="lazy">
+                      <figcaption>Modern development environments emphasize collaboration and efficiency</figcaption>
                     </div>
 
-                    <h2>Keep your hair healthy</h2>
+                    <h2>The Rise of Web Components</h2>
                     <p>
-                      For clients with natural or textured hair, the best routine is usually gentle and consistent. Use a moisturizing shampoo, a nourishing conditioner, and a product that fits your hair type. Avoid over-washing, and always protect your hair from too much heat.
+                      Web Components have become increasingly crucial in modern web development, offering a standardized way to create reusable custom elements. Key advantages include:
                     </p>
                     <ul>
-                      <li>Use light products that do not leave hair stiff or heavy</li>
-                      <li>Moisturize regularly, especially during dry weeks</li>
-                      <li>Trim split ends before they become harder to manage</li>
-                      <li>Ask our team for product advice that matches your texture</li>
+                      <li>Enhanced code reusability across different frameworks</li>
+                      <li>Better encapsulation of functionality</li>
+                      <li>Improved maintenance and scalability</li>
+                      <li>Framework-agnostic component development</li>
                     </ul>
 
                     <div class="highlight-box">
-                      <h3>Quick barber tips</h3>
+                      <h3>Key Trends in 2025</h3>
                       <ul class="trend-list">
                         <li>
-                          <i class="bi bi-scissors"></i>
-                          <span>Wash your beard with mild soap and dry it properly</span>
+                          <i class="bi bi-lightning-charge"></i>
+                          <span>Edge Computing and Serverless Architecture</span>
                         </li>
                         <li>
-                          <i class="bi bi-droplet"></i>
-                          <span>Apply beard oil after washing to keep it soft</span>
+                          <i class="bi bi-shield-check"></i>
+                          <span>Enhanced Security Measures</span>
                         </li>
                         <li>
-                          <i class="bi bi-brush"></i>
-                          <span>Brush your beard daily to keep it neat and tidy</span>
+                          <i class="bi bi-phone"></i>
+                          <span>Progressive Web Apps (PWAs)</span>
                         </li>
                       </ul>
                     </div>
 
-                    <h2>Choose the right products</h2>
+                    <h2>Performance Optimization</h2>
                     <p>
-                      The right product can change how your hair looks and feels. Whether you want volume, shine, or a natural finish, we always guide clients to options that suit their texture, lifestyle, and budget.
+                      Performance remains a critical factor in web development, with an increasing focus on Core Web Vitals and user experience metrics. Modern applications must be optimized for both speed and efficiency.
                     </p>
 
                     <blockquote>
                       <p>
-                        "A good cut is only half the story. The way you care for your hair at home is what keeps the style looking great."
+                        "The future of web development lies not just in writing code, but in creating seamless, accessible, and performant experiences that work for everyone, everywhere."
                       </p>
-                      <cite>Amina Wanjiku, Lead Stylist</cite>
+                      <cite>Emily Thompson, Web Performance Architect</cite>
                     </blockquote>
 
                     <div class="content-grid">
                       <div class="row g-4">
                         <div class="col-md-6">
                           <div class="info-card">
-                            <i class="bi bi-sun"></i>
-                            <h4>Daily Care</h4>
-                            <p>Keep your hair neat with simple routines that work well in Nairobi’s changing weather.</p>
+                            <i class="bi bi-speedometer2"></i>
+                            <h4>Performance Metrics</h4>
+                            <p>Focus on Core Web Vitals and user-centric performance metrics for better search rankings and user experience.</p>
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="info-card">
-                            <i class="bi bi-award"></i>
-                            <h4>Professional Advice</h4>
-                            <p>Our stylists help you choose the right products and care plan for your hair type.</p>
+                            <i class="bi bi-universal-access"></i>
+                            <h4>Accessibility</h4>
+                            <p>Implementing WCAG guidelines and ensuring web applications are accessible to all users across different devices.</p>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <h2>Visit us when you need a fresh reset</h2>
+                    <h2>Looking Forward</h2>
                     <p>
-                      If your style is losing shape or your hair needs a boost, book a visit with us. We are here to help you look polished, confident, and ready for the week ahead.
+                      As we continue through 2025, web development practices will further evolve, embracing new technologies while maintaining a strong foundation in performance, accessibility, and user experience. Staying updated with these trends and best practices is crucial for developers looking to build modern, scalable web applications.
                     </p>
                   </div>
 
@@ -224,10 +225,11 @@
                     <div class="tags-section">
                       <h4>Related Topics</h4>
                       <div class="tags">
-                        <a href="#" class="tag">Haircare</a>
-                        <a href="#" class="tag">Beard Care</a>
-                        <a href="#" class="tag">Salon Tips</a>
-                        <a href="#" class="tag">Nairobi Style</a>
+                        <a href="#" class="tag">Web Development</a>
+                        <a href="#" class="tag">Performance</a>
+                        <a href="#" class="tag">Best Practices</a>
+                        <a href="#" class="tag">Trends</a>
+                        <a href="#" class="tag">2025</a>
                       </div>
                     </div>
 
@@ -255,26 +257,27 @@
 
               <div class="blog-comments-4">
                 <div class="comments-header">
-                  <h3 class="title">Client Tips & Feedback</h3>
+                  <h3 class="title">Community Feedback</h3>
                   <div class="comments-stats">
-                    <span class="count">8</span>
+                    <span class="count">12</span>
                     <span class="label">Comments</span>
                   </div>
                 </div>
 
                 <div class="comments-container">
+                  <!-- Comment #1 -->
                   <div class="comment-thread">
                     <div class="comment-box">
                       <div class="comment-wrapper">
                         <div class="avatar-wrapper">
-                          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Avatar" loading="lazy">
+                          <img src="assets/img/person/person-f-9.webp" alt="Avatar" loading="lazy">
                           <span class="status-indicator"></span>
                         </div>
 
                         <div class="comment-content">
                           <div class="comment-header">
                             <div class="user-info">
-                              <h4>Wanjiku M.</h4>
+                              <h4>Thomas Anderson</h4>
                               <span class="time-badge">
                                 <i class="bi bi-clock"></i>
                                 2 hours ago
@@ -289,7 +292,7 @@
                           </div>
 
                           <div class="comment-body">
-                            <p>This article is so helpful. I started using a light leave-in conditioner and my hair feels much softer.</p>
+                            <p>Great insights on modern web development! sik0 tech's approach to scalability is really impressive. Looking forward to more technical articles like this.</p>
                           </div>
 
                           <div class="comment-actions">
@@ -323,22 +326,25 @@
                           <div class="comment-content">
                             <div class="comment-header">
                               <div class="user-info">
-                              <h4>Brian O.</h4>
-                              <span class="time-badge">
-                                <i class="bi bi-clock"></i>
-                                1 hour ago
-                              </span>
+                                <h4>Maria Rodriguez</h4>
+                                <span class="time-badge">
+                                  <i class="bi bi-clock"></i>
+                                  1 hour ago
+                                </span>
+                              </div>
+                              <div class="engagement">
+                                <span class="likes">
+                                  <i class="bi bi-heart"></i>
+                                  8
+                                </span>
+                              </div>
                             </div>
-                            <div class="engagement">
-                              <span class="likes">
-                                <i class="bi bi-heart"></i>
-                                8
-                              </span>
-                            </div>
-                          </div>
 
-                          <div class="comment-body">
-                            <p>The beard oil tip really helped. My beard now stays neat and easy to manage between trims.</p>
+                            <div class="comment-body">
+                              <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae.</p>
+                            </div>
+
+                            <div class="comment-actions">
                               <button class="action-btn like-btn" aria-label="Like comment">
                                 <i class="bi bi-heart"></i>
                                 <span>Like</span>
@@ -367,22 +373,25 @@
                           <div class="comment-content">
                             <div class="comment-header">
                               <div class="user-info">
-                              <h4>Naomi K.</h4>
-                              <span class="time-badge">
-                                <i class="bi bi-clock"></i>
-                                30 minutes ago
-                              </span>
+                                <h4>Alex Chen</h4>
+                                <span class="time-badge">
+                                  <i class="bi bi-clock"></i>
+                                  30 minutes ago
+                                </span>
+                              </div>
+                              <div class="engagement">
+                                <span class="likes">
+                                  <i class="bi bi-heart"></i>
+                                  5
+                                </span>
+                              </div>
                             </div>
-                            <div class="engagement">
-                              <span class="likes">
-                                <i class="bi bi-heart"></i>
-                                5
-                              </span>
-                            </div>
-                          </div>
 
-                          <div class="comment-body">
-                            <p>I love the advice on product choice. It is easier now to find what works for my hair.</p>
+                            <div class="comment-body">
+                              <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+                            </div>
+
+                            <div class="comment-actions">
                               <button class="action-btn like-btn" aria-label="Like comment">
                                 <i class="bi bi-heart"></i>
                                 <span>Like</span>
@@ -414,7 +423,7 @@
                         <div class="comment-content">
                           <div class="comment-header">
                             <div class="user-info">
-                              <h4>Faith N.</h4>
+                              <h4>Emily Watson</h4>
                               <span class="time-badge">
                                 <i class="bi bi-clock"></i>
                                 3 hours ago
@@ -429,7 +438,7 @@
                           </div>
 
                           <div class="comment-body">
-                            <p>The salon team always gives practical tips that make styling at home so much easier.</p>
+                            <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
                           </div>
 
                           <div class="comment-actions">
@@ -465,7 +474,7 @@
               <form method="post" role="form">
 
                 <div class="form-header">
-                  <h3>Share Your Haircare Tip</h3>
+                  <h3>Leave a Comment</h3>
                   <p>Your email address will not be published. Required fields are marked *</p>
                 </div>
 
@@ -535,28 +544,44 @@
               <h3 class="widget-title">Recent Posts</h3>
 
               <div class="post-item">
-                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="Fresh hairstyle" class="flex-shrink-0">
+                <img src="assets/img/blog/blog-post-square-1.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html?post=1">How to keep your cut fresh between visits</a></h4>
-                  <time datetime="2026-06-09">Jun 9, 2026</time>
+                  <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
-              </div>
+              </div><!-- End recent post item-->
 
               <div class="post-item">
-                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=200&q=80" alt="Beard styling" class="flex-shrink-0">
+                <img src="assets/img/blog/blog-post-square-2.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html?post=2">Simple beard care for a neat finish</a></h4>
-                  <time datetime="2026-05-20">May 20, 2026</time>
+                  <h4><a href="blog-details.html">Quidem autem et impedit</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
-              </div>
+              </div><!-- End recent post item-->
 
               <div class="post-item">
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=200&q=80" alt="Hair products" class="flex-shrink-0">
+                <img src="assets/img/blog/blog-post-square-3.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html?post=3">Choosing products that suit Nairobi weather</a></h4>
-                  <time datetime="2026-04-15">Apr 15, 2026</time>
+                  <h4><a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
-              </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/img/blog/blog-post-square-4.webp" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Laborum corporis quo dara net para</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="assets/img/blog/blog-post-square-5.webp" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+              </div><!-- End recent post item-->
 
             </div><!--/Recent Posts Widget -->
 
@@ -565,11 +590,12 @@
 
               <h3 class="widget-title">Categories</h3>
               <ul class="mt-3">
-                <li><a href="#">Haircuts <span>(8)</span></a></li>
-                <li><a href="#">Beard Care <span>(5)</span></a></li>
-                <li><a href="#">Hair Products <span>(6)</span></a></li>
-                <li><a href="#">Salon Tips <span>(4)</span></a></li>
-                <li><a href="#">Nairobi Style <span>(3)</span></a></li>
+                <li><a href="#">General <span>(25)</span></a></li>
+                <li><a href="#">Lifestyle <span>(12)</span></a></li>
+                <li><a href="#">Travel <span>(5)</span></a></li>
+                <li><a href="#">Design <span>(22)</span></a></li>
+                <li><a href="#">Creative <span>(8)</span></a></li>
+                <li><a href="#">Educaion <span>(14)</span></a></li>
               </ul>
 
             </div><!--/Categories Widget -->
@@ -579,14 +605,17 @@
 
               <h3 class="widget-title">Tags</h3>
               <ul>
-                <li><a href="#">Cuts</a></li>
-                <li><a href="#">Beards</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Nairobi</a></li>
-                <li><a href="#">Styling</a></li>
-                <li><a href="#">Haircare</a></li>
-                <li><a href="#">Salon</a></li>
-                <li><a href="#">Barber</a></li>
+                <li><a href="#">App</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Creative</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Smart</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Marketing</a></li>
               </ul>
 
             </div><!--/Tags Widget -->
@@ -607,7 +636,7 @@
         <div class="row justify-content-center text-center">
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
-            <p>Get style updates, salon tips, and offers from Milele Salon in Nairobi.</p>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
             <form action="forms/newsletter.php" method="post" class="php-email-form">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
               <div class="loading">Loading</div>
@@ -623,13 +652,13 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Milele Salon</span>
+            <span class="sitename">sik0 tech</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Westlands</p>
-            <p>Nairobi, Kenya</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+254 700 000 000</span></p>
-            <p><strong>Email:</strong> <span>hello@milelesalon.co.ke</span></p>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
         </div>
 
@@ -647,15 +676,15 @@
           <h4>Our Services</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Haircuts</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Beard Grooming</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Hair Products</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
-          <p>Follow Milele Salon for fresh cuts, grooming tips, and premium hair products.</p>
+          <p>Follow sik0 tech for the latest in tech innovation, development insights, and industry best practices.</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -668,7 +697,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Milele Salon</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">sik0 tech</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -687,180 +716,19 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    const posts = {
-      1: {
-        title: 'How to keep your hair and beard looking fresh between salon visits',
-        category: 'Haircare & Barbering',
-        readTime: '5 min read',
-        heroImg: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80',
-        heroAlt: 'Barber shaping a beard',
-        authorName: 'Amina Wanjiku',
-        authorRole: 'Lead Stylist',
-        authorImg: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
-        date: 'Jun 09, 2026',
-        comments: '8 Comments',
-        content: `
-          <p class="lead">At Milele Salon, we know that great style does not stop when you leave the chair. A few simple habits can help you keep your hair and beard looking sharp between visits.</p>
-          <p>Nairobi weather can be tough on hair, especially when the air is dry or humid. That is why we recommend a routine that keeps your hair soft, clean, and easy to manage.</p>
-          <div class="content-image right-aligned">
-            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" class="img-fluid" alt="Salon client styling her hair" loading="lazy">
-            <figcaption>Simple home care keeps your style looking fresh and polished</figcaption>
-          </div>
-          <h2>Keep your hair healthy</h2>
-          <p>For clients with natural or textured hair, the best routine is usually gentle and consistent. Use a moisturizing shampoo, a nourishing conditioner, and a product that fits your hair type.</p>
-          <ul>
-            <li>Use light products that do not leave hair stiff or heavy</li>
-            <li>Moisturize regularly, especially during dry weeks</li>
-            <li>Trim split ends before they become harder to manage</li>
-          </ul>
-          <div class="highlight-box">
-            <h3>Quick barber tips</h3>
-            <ul class="trend-list">
-              <li><i class="bi bi-scissors"></i><span>Wash your beard with mild soap and dry it properly</span></li>
-              <li><i class="bi bi-droplet"></i><span>Apply beard oil after washing to keep it soft</span></li>
-              <li><i class="bi bi-brush"></i><span>Brush your beard daily to keep it neat and tidy</span></li>
-            </ul>
-          </div>
-          <h2>Choose the right products</h2>
-          <p>The right product can change how your hair looks and feels. Whether you want volume, shine, or a natural finish, we always guide clients to options that suit their texture and budget.</p>
-          <blockquote>
-            <p>"A good cut is only half the story. The way you care for your hair at home is what keeps the style looking great."</p>
-            <cite>Amina Wanjiku, Lead Stylist</cite>
-          </blockquote>
-        `,
-        tags: ['Haircare', 'Beard Care', 'Salon Tips', 'Nairobi Style']
-      },
-      2: {
-        title: 'How to keep your beard sharp, neat, and easy to style',
-        category: 'Beard Grooming',
-        readTime: '4 min read',
-        heroImg: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80',
-        heroAlt: 'Beard styling session',
-        authorName: 'Daniel Otieno',
-        authorRole: 'Barber Lead',
-        authorImg: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
-        date: 'May 17, 2026',
-        comments: '6 Comments',
-        content: `
-          <p class="lead">A neat beard makes a strong first impression. With a little care at home, your beard can stay defined, soft, and easy to manage between trims.</p>
-          <p>We often see clients struggle with dryness, patchy growth, or a beard that looks uneven after a few days. The fix is usually simple: clean gently, moisturize regularly, and trim only where needed.</p>
-          <div class="content-image right-aligned">
-            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" class="img-fluid" alt="Barber shaping a beard" loading="lazy">
-            <figcaption>Regular grooming keeps your beard looking intentional and polished</figcaption>
-          </div>
-          <h2>Use a simple routine</h2>
-          <p>Wash your beard with mild soap, dry it properly, and apply beard oil to prevent itch and keep the hair soft. A quick comb-through each morning also helps shape the look.</p>
-          <ul>
-            <li>Trim around the cheek line and neckline once every few weeks</li>
-            <li>Use beard oil or balm for daily softness and shine</li>
-            <li>Brush the hairs down for a cleaner, more groomed finish</li>
-          </ul>
-          <h2>Know when to visit us</h2>
-          <p>If your beard is starting to lose definition or feels difficult to style, booking a barber session can help you reset the shape and keep it looking sharp.</p>
-        `,
-        tags: ['Beard Care', 'Barber Tips', 'Grooming', 'Nairobi']
-      },
-      3: {
-        title: 'Best hair products for everyday shine and healthy growth',
-        category: 'Hair Products',
-        readTime: '6 min read',
-        heroImg: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80',
-        heroAlt: 'Hair products arranged on a table',
-        authorName: 'Grace Nduta',
-        authorRole: 'Senior Stylist',
-        authorImg: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=200&q=80',
-        date: 'Jun 02, 2026',
-        comments: '10 Comments',
-        content: `
-          <p class="lead">The right products can make hair easier to manage, smoother to style, and healthier over time. At Milele Salon, we help clients choose products that suit their hair texture and daily routine.</p>
-          <p>For many Nairobi clients, humidity and dust make it especially important to use products that keep hair soft without weighing it down. Lightweight moisturizers, leave-in conditioners, and scalp treatments are often the best place to start.</p>
-          <div class="content-image right-aligned">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" class="img-fluid" alt="Styling hair with professional products" loading="lazy">
-            <figcaption>Choosing the right formulas helps your hair stay healthy and easy to style</figcaption>
-          </div>
-          <h2>What to look for</h2>
-          <p>Look for products that add moisture, reduce frizz, and protect your hair from heat. If you are growing your hair out, a gentle scalp treatment and protein-rich conditioner can also help strengthen it.</p>
-          <ul>
-            <li>Choose lightweight leave-in sprays for daily hydration</li>
-            <li>Use a smoothing cream for definition and control</li>
-            <li>Protect your hair with heat protection before styling</li>
-          </ul>
-          <h2>Ask us before you buy</h2>
-          <p>If you are unsure which product to use, visit us and let our team recommend a routine that fits your hair type and budget.</p>
-        `,
-        tags: ['Hair Products', 'Styling', 'Healthy Hair', 'Nairobi']
-      },
-      4: {
-        title: 'Protective styling tips for natural hair that still look polished',
-        category: 'Natural Hair Care',
-        readTime: '5 min read',
-        heroImg: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80',
-        heroAlt: 'Natural hair styling',
-        authorName: 'Njeri M.',
-        authorRole: 'Natural Hair Specialist',
-        authorImg: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80',
-        date: 'Apr 21, 2026',
-        comments: '7 Comments',
-        content: `
-          <p class="lead">Protective styling is one of the best ways to keep natural hair healthy while still looking elegant. The goal is to reduce breakage while keeping the style neat and presentable.</p>
-          <p>Many clients choose twists, buns, or low-manipulation styles when they want a polished look for work, events, or busy weeks. These styles also help retain moisture and reduce daily stress on the hair.</p>
-          <div class="content-image right-aligned">
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" class="img-fluid" alt="Natural hair styling session" loading="lazy">
-            <figcaption>Protective styles help hair stay defined and healthy longer</figcaption>
-          </div>
-          <h2>Make the style last</h2>
-          <p>Use a leave-in conditioner, seal the ends, and avoid over-handling the hair. A satin scarf or bonnet at night helps preserve the shape and prevents frizz.</p>
-          <ul>
-            <li>Keep your hair moisturized without making it greasy</li>
-            <li>Refresh the style with a light mist and serum when needed</li>
-            <li>Give your scalp a break between heavy styling sessions</li>
-          </ul>
-          <h2>Visit us for a fresh look</h2>
-          <p>Our team can help you choose a protective style that suits your hair length, texture, and lifestyle.</p>
-        `,
-        tags: ['Natural Hair', 'Protective Styles', 'Moisture', 'Salon Tips']
-      }
-    };
-
-    const params = new URLSearchParams(window.location.search);
-    const postId = params.get('post') || '1';
-    const post = posts[postId] || posts[1];
-
-    document.title = `${post.title} | Milele Salon`;
-    document.querySelector('.page-title h1').textContent = 'Haircare & Barber Insights';
-    document.querySelector('.hero-img img').src = post.heroImg;
-    document.querySelector('.hero-img img').alt = post.heroAlt;
-    document.querySelector('.meta-categories .category').textContent = post.category;
-    document.querySelector('.meta-categories .reading-time').innerHTML = `<i class="bi bi-clock"></i> ${post.readTime}`;
-    document.querySelector('.content-header .title').textContent = post.title;
-    document.querySelector('.author-details img').src = post.authorImg;
-    document.querySelector('.author-details img').alt = post.authorName;
-    document.querySelector('.author-details .info h4').textContent = post.authorName;
-    document.querySelector('.author-details .info .role').textContent = post.authorRole;
-    document.querySelector('.post-meta .date').innerHTML = `<i class="bi bi-calendar3"></i> ${post.date}`;
-    document.querySelector('.post-meta .comments').innerHTML = `<i class="bi bi-chat-text"></i> ${post.comments}`;
-    document.querySelector('.content').innerHTML = post.content;
-    document.querySelector('.tags-section .tags').innerHTML = post.tags.map(tag => `<a href="#" class="tag">${tag}</a>`).join('');
-
-    document.querySelectorAll('.recent-posts-widget .post-item h4 a').forEach((link, index) => {
-      const targets = ['blog-details.html?post=1', 'blog-details.html?post=2', 'blog-details.html?post=3', 'blog-details.html?post=4'];
-      link.href = targets[index] || targets[0];
-    });
-  </script>
-
+  <script src="{% static 'assets/js/main.js' %}"></script>
 </body>
 
 </html>
